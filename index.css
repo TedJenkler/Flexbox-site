@@ -1,0 +1,95 @@
+@import url(https://fonts.google.com/specimen/Montserrat);
+@import url(https://fonts.google.com/specimen/Fraunces);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    background: hsl(30, 38%, 92%);
+    font-size: 14px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: hsl(30, 38%, 92%);
+    height: 100vh;
+    width: 100%;
+}
+
+.item1 {
+    background: white;
+    height: 400px;
+    width: 300px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.item2 {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 400px;
+    width: 300px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.Text {
+    align-self: flex-start;
+    margin-left: 8px;
+    font-family: Montserrat ,sans-serif;
+    margin-left: 30px;
+}
+
+.Text h1 {
+    font-weight: 700;
+    font-family: Fraunces, sans-serif;
+}
+
+.Text h3 {
+    font-weight: 500;
+}
+
+.price {
+    color:hsl(158, 36%, 37%);
+    display: flex;
+}
+
+.sale {
+    text-decoration: line-through;
+}
+
+.button {
+    height: 40px;
+    width: 250px;
+    background: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+.button:hover {
+    background: rgb(1, 60, 22);
+}
+
+@media(max-width: 768px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .item1 {
+        height: 250px;
+        border-radius: 10px 10px 0 0;
+    }
+    .item2 {
+        border-radius: 0 0 10px 10px;
+    }
+    }
